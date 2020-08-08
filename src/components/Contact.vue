@@ -3,14 +3,32 @@
         <h1 class="pageHeader">Contact</h1>
         <br/>
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+            <b-form-group id="input-group-1" label="First Name:" label-for="input-1">
+                <b-form-input
+                id="input-1"
+                v-model="form.firstName"
+                required
+                placeholder="Enter first name"
+                ></b-form-input>
+            </b-form-group>
+
+            <b-form-group id="input-group-2" label="Last Name:" label-for="input-2">
+                <b-form-input
+                id="input-2"
+                v-model="form.lastName"
+                required
+                placeholder="Enter last name"
+                ></b-form-input>
+            </b-form-group>
+            
             <b-form-group
-                id="input-group-1"
+                id="input-group-3"
                 label="Email address:"
-                label-for="input-1"
+                label-for="input-3"
                 description="We'll never share your email with anyone else."
             >
                 <b-form-input
-                id="input-1"
+                id="input-3"
                 v-model="form.email"
                 type="email"
                 required
@@ -18,14 +36,7 @@
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
-                <b-form-input
-                id="input-2"
-                v-model="form.name"
-                required
-                placeholder="Enter name"
-                ></b-form-input>
-            </b-form-group>
+            
 
             <b-form-group id="input-group-3" label="Food:" label-for="input-3">
                 <b-form-select
