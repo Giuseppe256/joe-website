@@ -2,30 +2,39 @@
     <div>
         <h1 class="pageHeader">Contact</h1>
         <br/>
+        <b-container fluid>
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-            <b-form-group id="input-group-1" label="First Name:" label-for="input-1">
+            <b-row no-gutters>
+              <b-col>
+            <b-form-group id="input-group-1" label="First Name:" label-for="input-1" label-cols-md="2" label-align="right">
                 <b-form-input
                 id="input-1"
                 v-model="form.firstName"
                 required
                 placeholder="Enter first name"
+                class="pt-2"
                 ></b-form-input>
             </b-form-group>
-
-            <b-form-group id="input-group-2" label="Last Name:" label-for="input-2">
+              </b-col>
+              <b-col>
+            <b-form-group id="input-group-2" label="Last Name:" label-for="input-2" label-cols-md="2" label-align="right">
                 <b-form-input
                 id="input-2"
                 v-model="form.lastName"
                 required
                 placeholder="Enter last name"
+                class="pt-2"
                 ></b-form-input>
             </b-form-group>
-            
+              </b-col>
+            </b-row>
+
             <b-form-group
                 id="input-group-3"
                 label="Email address:"
                 label-for="input-3"
-                description="We'll never share your email with anyone else."
+                label-cols-md="1"
+                label-align="right"
             >
                 <b-form-input
                 id="input-3"
@@ -33,30 +42,28 @@
                 type="email"
                 required
                 placeholder="Enter email"
+                class="pt-2"
                 ></b-form-input>
             </b-form-group>
-
+          
             
 
-            <b-form-group id="input-group-3" label="Food:" label-for="input-3">
-                <b-form-select
-                id="input-3"
-                v-model="form.food"
-                :options="foods"
+            <b-form-group id="input-group-4" label="Message:" label-for="input-4" label-cols-md="1" label-align="right">
+                <b-form-textarea
+                id="input-4"
+                v-model="form.message"
+                type="text"
                 required
-                ></b-form-select>
-            </b-form-group>
-
-            <b-form-group id="input-group-4">
-                <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
-                <b-form-checkbox value="me">Check me out</b-form-checkbox>
-                <b-form-checkbox value="that">Check that out</b-form-checkbox>
-                </b-form-checkbox-group>
+                placeholder="Describe your project"
+                rows="5"
+                class="pt-2"
+                ></b-form-textarea>
             </b-form-group>
 
             <b-button type="submit" variant="primary">Submit</b-button>
             <b-button type="reset" variant="danger">Reset</b-button>
         </b-form>
+        </b-container>
     </div>
 </template>
 
@@ -83,10 +90,10 @@ export default {
       onReset(evt) {
         evt.preventDefault()
         // Reset our form values
+        this.form.firstName = ''
+        this.form.lastName = ''
         this.form.email = ''
-        this.form.name = ''
-        this.form.food = null
-        this.form.checked = []
+        this.form.message = ''
         // Trick to reset/clear native browser form validation state
         this.show = false
         this.$nextTick(() => {
