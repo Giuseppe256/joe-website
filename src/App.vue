@@ -32,4 +32,9 @@ export default {
 .pageHeader {
   margin-top: 8px;
 }
+.cardWidth {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
