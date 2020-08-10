@@ -3,12 +3,12 @@
         <h1 class="pageHeader">Projects</h1>
         <br/>
 
-        <b-card class="cardWidth" border-variant="dark">
-            <h3>Dunkirk Central Christian Academy</h3>
+        <b-card class="cardWidth" border-variant="light">
+            <h3 class="mb-3">Dunkirk Central Christian Academy</h3>
             <b-row no-gutters align-h="between">
                 <b-col md="3">
                     <b-link href="https://dunkirkcca.org/" target="_blank">
-                        <b-card-img src="https://dunkirkcca.org/wp-content/uploads/2018/02/logo2018small.png" img-alt="DunkirkCCA"></b-card-img>
+                        <b-card-img class="mb-2" style="background-color: #F5F5F5; padding: 5px" src="https://dunkirkcca.org/wp-content/uploads/2018/02/logo2018small.png" img-alt="DunkirkCCA"></b-card-img>
                     </b-link>
                 </b-col>
                 
@@ -38,12 +38,12 @@
         </b-card>
 
         <br/>
-        <b-card class="cardWidth" border-variant="dark">
-            <h3>First Baptist Church Dunkirk</h3>
+        <b-card class="cardWidth" border-variant="light">
+            <h3 class="mb-2">First Baptist Church Dunkirk</h3>
             <b-row no-gutters align-h="between">
                 <b-col md="3">
                     <b-link href="https://dunkirkbaptist.org/" target="_blank">
-                        <b-card-img rounded style="background-color: #003651" src="https://dunkirkbaptist.org/wp-content/uploads/2017/12/fbcDunkirk_2.png" img-alt="DunkirkCCA"></b-card-img>
+                        <b-card-img class="mb-2" style="background-color: #003651; padding: 5px" src="https://dunkirkbaptist.org/wp-content/uploads/2017/12/fbcDunkirk_2.png" img-alt="DunkirkCCA"></b-card-img>
                     </b-link>
                 </b-col>
                 
@@ -72,12 +72,12 @@
         </b-card>
 
         <br/>
-        <b-card class="cardWidth" border-variant="dark">
-            <h3>Community Action Program of Evansville</h3>
+        <b-card class="cardWidth" border-variant="light">
+            <h3 class="mb-2">Community Action Program of Evansville</h3>
             <b-row no-gutters align-h="between">
                 <b-col md="3">
                     <b-link href="https://jpm256.wordpress.com/" target="_blank">
-                        <b-card-img src="https://jpm256.files.wordpress.com/2020/07/cape-logo.png?w=439" img-alt="CAPE"></b-card-img>
+                        <b-card-img class="mb-2" style="background-color: #F5F5F5; padding: 5px" src="https://jpm256.files.wordpress.com/2020/07/cape-logo.png?w=439" img-alt="CAPE"></b-card-img>
                     </b-link>
                 </b-col>
                 
@@ -117,5 +117,7 @@ export default {
 </script>
 
 <style scoped>
-
+.cardWidth {
+    background-color: #404040;
+}
 </style>

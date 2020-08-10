@@ -6,7 +6,7 @@
         <b-card class="cardWidth" border-variant="dark">
           <b-row no-gutters>
             <b-col md="4">
-              <b-card-img src="http://68.253.114.20/joe-website/beer.jpg" img-alt="Pic of Joe"></b-card-img>
+              <b-card-img class="mb-2" src="http://68.253.114.20/joe-website/beer.jpg" img-alt="Pic of Joe"></b-card-img>
             </b-col>
             <b-col md="8">
               <b-container fluid class="mb-2">
@@ -23,7 +23,7 @@
                 <h5>(812) 304-9419</h5>
                 <b-row align-h="center">
                   <b-col sm="2">
-                    <b-button variant="info" onclick="this.blur();" href="tel://+18123049419">Call Me!</b-button>
+                    <b-button class="mb-2" variant="info" onclick="this.blur();" href="tel://+18123049419">Call Me!</b-button>
                   </b-col>
                   <b-col sm="2">
                     <b-button variant="warning" onclick="this.blur();" href="sms://+18123049419">Text Me!</b-button>
@@ -44,5 +44,7 @@ export default {
 </script>
 
 <style scoped>
-
+.cardWidth {
+    background-color: #404040;
+}
 </style>
