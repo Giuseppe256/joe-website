@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-navbar type="dark" sticky class="border-bottom-white" style="background-color: #242526">
+        <b-navbar type="dark" class="header" fixed="top" style="background-color: #242526">
             <b-navbar-nav>
                 <router-link :to="{ name: 'Home' }">
                     <b-nav-item href="/Home">Home</b-nav-item>
@@ -20,7 +20,7 @@
 
 <script>
     export default {
-        name: 'NavBar',
+        name: 'NavBar'
     }
 </script>
 

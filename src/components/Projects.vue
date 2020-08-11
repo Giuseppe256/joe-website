@@ -35,6 +35,11 @@
                     </b-row>
                 </b-col>
             </b-row>
+            <b-row align-h="center" no-gutters>
+                <b-col md="2">
+                    <b-button style="width: 100%" variant="primary" onclick="this.blur();" href="https://dunkirkcca.org/" target="_blank">Visit</b-button>
+                </b-col>
+            </b-row>
         </b-card>
 
         <br/>
@@ -67,6 +72,11 @@
                             </ul>
                         </b-col>
                     </b-row>
+                </b-col>
+            </b-row>
+            <b-row align-h="center" no-gutters>
+                <b-col md="2">
+                    <b-button style="width: 100%" variant="primary" onclick="this.blur();" href="https://dunkirkbaptist.org/" target="_blank">Visit</b-button>
                 </b-col>
             </b-row>
         </b-card>
@@ -102,6 +112,11 @@
                             </ul>
                         </b-col>
                     </b-row>
+                </b-col>
+            </b-row>
+            <b-row align-h="center" no-gutters>
+                <b-col md="2">
+                    <b-button style="width: 100%" variant="primary" onclick="this.blur();" href="https://jpm256.wordpress.com/" target="_blank">Visit</b-button>
                 </b-col>
             </b-row>
         </b-card>

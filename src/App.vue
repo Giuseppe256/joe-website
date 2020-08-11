@@ -3,19 +3,22 @@
     <div class="mx-0 px-0 pt-0">
       <NavBar />
     </div>
-    <router-view />
+    <router-view style="padding-top: 56px" />
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <Home msg="Welcome to Your Vue.js App"/> -->
+    <Footer />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Footer
   }
 }
 </script>
