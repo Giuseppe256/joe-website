@@ -7,7 +7,7 @@
           <b-row no-gutters>
             <b-col md="4">
               <!-- <b-card-img class="mb-2" src="http://68.253.114.20/joe-website/beer.jpg" img-alt="Pic of Joe"></b-card-img> -->
-              <b-card-img class="mb-2" src="http://192.168.1.66:8080/beer.jpg" img-alt="Pic of Joe"></b-card-img>
+              <b-card-img class="mb-2" src="http://192.168.1.67:8080/beer.jpg" img-alt="Pic of Joe"></b-card-img>
             </b-col>
             <b-col md="8">
               <b-container fluid class="mb-2">
