@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1 class="pageHeader">Joe's Website Home</h1>
-    <b-container style="height: 600px"></b-container>
   </div>
 </template>
 

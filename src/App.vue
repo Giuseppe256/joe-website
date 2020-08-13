@@ -1,12 +1,12 @@
 <template>
-  <div class="mt-0" id="app">
+  <div class="mt-0" style="min-height: 100vh;" id="app">
     <div class="mx-0 px-0 pt-0">
       <NavBar />
     </div>
-    <router-view style="padding-top: 56px" />
+    <router-view style="padding-top: 56px; padding-bottom: 8vh;" />
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <Home msg="Welcome to Your Vue.js App"/> -->
-    <Footer />
+    <Footer style="position: fixed; bottom: 0; width: 100vw;" />
   </div>
 </template>
 

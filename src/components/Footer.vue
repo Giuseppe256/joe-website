@@ -1,9 +1,9 @@
 <template>
     <div>
-        <b-card class="footer" style="background-color: #242526" height="150">
-            <v-footer>
-                <b-row>
-                    <b-col>
+        <b-card class="footer" style="background-color: #242526; height: 8vh;">
+            <v-footer style="height: 100%">
+                <b-row align-v="center" style="height: 8vh">
+                    <b-col align-self="center">
                         {{ new Date().getFullYear() }} — <strong>Joe Massaro</strong>
                     </b-col>
                 </b-row>
@@ -19,4 +19,8 @@ export default {
 </script>
 
 <style scoped>
+.card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 </style>
